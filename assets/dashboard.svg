@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="320" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="30" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="700" fill="#e5e7eb">
+    📊 Career Impact Dashboard
+  </text>
+  <text x="30" y="60" font-family="monospace" font-size="11" fill="#64748b">
+    last_updated: 2026-05-12 · src: production_systems
+  </text>
+
+  <!-- Stat Card 1: API Latency -->
+  <g transform="translate(30, 90)">
+    <rect width="200" height="100" rx="10" fill="#0a0e1a" stroke="#00b4d8" stroke-width="1" opacity="0.9"/>
+    <text x="16" y="28" font-family="monospace" font-size="11" fill="#64748b">API_LATENCY_REDUCTION</text>
+    <text x="16" y="68" font-family="'Segoe UI', system-ui, sans-serif" font-size="36" font-weight="700" fill="url(#g1)">
+      30%
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+    </text>
+    <text x="16" y="88" font-family="monospace" font-size="10" fill="#94a3b8">Redis caching + SQL tuning</text>
+    <text x="180" y="32" font-size="14" text-anchor="end">⚡</text>
+  </g>
+
+  <!-- Stat Card 2: Users Secured -->
+  <g transform="translate(245, 90)">
+    <rect width="200" height="100" rx="10" fill="#0a0e1a" stroke="#7c3aed" stroke-width="1" opacity="0.9"/>
+    <text x="16" y="28" font-family="monospace" font-size="11" fill="#64748b">USERS_SECURED_IAM</text>
+    <text x="16" y="68" font-family="'Segoe UI', system-ui, sans-serif" font-size="36" font-weight="700" fill="url(#g2)">
+      500K+
+    </text>
+    <text x="16" y="88" font-family="monospace" font-size="10" fill="#94a3b8">Keycloak · OAuth2 · OIDC</text>
+    <text x="180" y="32" font-size="14" text-anchor="end">🔐</text>
+  </g>
+
+  <!-- Stat Card 3: Delivery SLA -->
+  <g transform="translate(460, 90)">
+    <rect width="200" height="100" rx="10" fill="#0a0e1a" stroke="#22c55e" stroke-width="1" opacity="0.9"/>
+    <text x="16" y="28" font-family="monospace" font-size="11" fill="#64748b">KAFKA_DELIVERY_SLA</text>
+    <text x="16" y="68" font-family="'Segoe UI', system-ui, sans-serif" font-size="36" font-weight="700" fill="url(#g3)">
+      99.9%
+    </text>
+    <text x="16" y="88" font-family="monospace" font-size="10" fill="#94a3b8">Real-time notifications</text>
+    <text x="180" y="32" font-size="14" text-anchor="end">📡</text>
+  </g>
+
+  <!-- Stat Card 4: Defects Reduced -->
+  <g transform="translate(675, 90)">
+    <rect width="200" height="100" rx="10" fill="#0a0e1a" stroke="#fbbf24" stroke-width="1" opacity="0.9"/>
+    <text x="16" y="28" font-family="monospace" font-size="11" fill="#64748b">DEFECT_RATE_REDUCTION</text>
+    <text x="16" y="68" font-family="'Segoe UI', system-ui, sans-serif" font-size="36" font-weight="700" fill="url(#g4)">
+      90%
+    </text>
+    <text x="16" y="88" font-family="monospace" font-size="10" fill="#94a3b8">Mentorship + code review</text>
+    <text x="180" y="32" font-size="14" text-anchor="end">🐞</text>
+  </g>
+
+  <!-- Bottom row: skill bars -->
+  <g transform="translate(30, 220)">
+    <text font-family="monospace" font-size="11" fill="#64748b">CORE_PROFICIENCIES</text>
+
+    <!-- Java -->
+    <g transform="translate(0, 16)">
+      <text font-family="monospace" font-size="11" fill="#e5e7eb">Java / Spring Boot</text>
+      <text x="840" font-family="monospace" font-size="11" fill="#00b4d8" text-anchor="end">95%</text>
+      <rect y="6" width="840" height="6" rx="3" fill="#1e293b"/>
+      <rect y="6" width="798" height="6" rx="3" fill="url(#g1)">
+        <animate attributeName="width" from="0" to="798" dur="1.5s" fill="freeze"/>
+      </rect>
+    </g>
+
+    <!-- Microservices -->
+    <g transform="translate(0, 38)">
+      <text font-family="monospace" font-size="11" fill="#e5e7eb">Microservices / Kafka</text>
+      <text x="840" font-family="monospace" font-size="11" fill="#7c3aed" text-anchor="end">90%</text>
+      <rect y="6" width="840" height="6" rx="3" fill="#1e293b"/>
+      <rect y="6" width="756" height="6" rx="3" fill="url(#g2)">
+        <animate attributeName="width" from="0" to="756" dur="1.7s" fill="freeze"/>
+      </rect>
+    </g>
+
+    <!-- IAM -->
+    <g transform="translate(0, 60)">
+      <text font-family="monospace" font-size="11" fill="#e5e7eb">IAM / Keycloak / OAuth2</text>
+      <text x="840" font-family="monospace" font-size="11" fill="#22c55e" text-anchor="end">88%</text>
+      <rect y="6" width="840" height="6" rx="3" fill="#1e293b"/>
+      <rect y="6" width="739" height="6" rx="3" fill="url(#g3)">
+        <animate attributeName="width" from="0" to="739" dur="1.9s" fill="freeze"/>
+      </rect>
+    </g>
+
+    <!-- AWS -->
+    <g transform="translate(0, 82)">
+      <text font-family="monospace" font-size="11" fill="#e5e7eb">AWS / Docker / Kubernetes</text>
+      <text x="840" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="end">80%</text>
+      <rect y="6" width="840" height="6" rx="3" fill="#1e293b"/>
+      <rect y="6" width="672" height="6" rx="3" fill="url(#g4)">
+        <animate attributeName="width" from="0" to="672" dur="2.1s" fill="freeze"/>
+      </rect>
+    </g>
+  </g>
+</svg>
